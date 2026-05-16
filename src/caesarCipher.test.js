@@ -41,4 +41,8 @@ describe('caesarCipher', ()=> {
     test('negative shift with capital wrap', () => {
         expect(caesarCipher('A', -3)).toBe('X')
     })
+    test('shift = -26', () => {
+        expect(caesarCipher('abc', -26)).toBe('abc') })
+    test('shift very negative', () => { 
+        expect(caesarCipher('abc', -29)).toBe('xyz') })
 })
