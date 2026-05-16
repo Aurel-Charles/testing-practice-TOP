@@ -10,7 +10,8 @@ export function analyzeArray(array) {
         }    
 
     const objectSum = array.reduce(
-        (accumulator, currentValue) => accumulator + currentValue, 0,); 
+        (accumulator, currentValue) => accumulator + currentValue, 0,
+    ); 
 
     object.average = objectSum / array.length
     object.max = Math.max(...array) 
